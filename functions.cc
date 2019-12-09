@@ -1,11 +1,17 @@
 #include <iostream>
+#include <ifstream>
 using namespace std;
 
 int countLines(ifstream ins);
 int countWord(ifstream ins);
 
-int main (int* argc, char* argv){
-  return 0;
+int main (int argc, char** argv){
+  cout << "You have entered " << argc << " arguments:" << "\n";
+
+    for (int i = 0; i < argc; ++i)
+        cout << argv[i] << "\n";
+
+    return 0;
 }
 
 int countLines(ifstream ins){

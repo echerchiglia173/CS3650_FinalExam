@@ -3,6 +3,7 @@
 #include<fstream>
 #include<cstdlib>
 #include<string>
+#include "catch2.hpp"
 using namespace std;
 
 int countLines(ifstream& ins);
@@ -27,7 +28,7 @@ int main (int argc, char** argv){
     return 0;
 }
 
-int countLines(istream& ins){
+int countLines(ifstream& ins){
   int count=0;
   string x;
   getline(ins, x);
@@ -39,7 +40,7 @@ int countLines(istream& ins){
   return count;
 }
 
-int countWord(istream& ins){
+int countWord(ifstream& ins){
   int count=0;
   char x;
   ins>>x;

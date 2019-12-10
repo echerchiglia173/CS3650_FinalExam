@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -76,4 +76,3 @@ int countWord(ifstream ins){
   }
   return count;
 }
->>>>>>> b00b8192f59dea2c2d9dc460774489e4b05a25c3

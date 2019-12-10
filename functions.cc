@@ -11,12 +11,14 @@ int countWord(ifstream& ins);
 // the
 int main (int argc, char** argv){
   ifstream ins;
+  string filename;
+  filename= argv[1];
   cout << "You have entered " << argc << " arguments:" << "\n";
 
     for (int i = 0; i < argc; ++i){
         cout << argv[i] << "\n";
       }
-        ins.open();
+        ins.open(filename);
         if(!ins.fail()){
     	      ins.close();
         }

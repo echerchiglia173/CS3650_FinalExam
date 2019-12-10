@@ -7,15 +7,22 @@ using namespace std;
 
 int countLines(ifstream ins);
 int countWord(ifstream ins);
-
+// the
 int main (int argc, char** argv){
+  ifstream ins;
   cout << "You have entered " << argc << " arguments:" << "\n";
 
-    for (int i = 0; i < argc; ++i)
+    for (int i = 0; i < argc; ++i){}
         cout << argv[i] << "\n";
+      }
+        ins.open();
+        if(!ins.fail()){
+    	      ins.close();
+        }
 
         countLines(ins);
         countWord(ins);
+        ins.close();
 
     return 0;
 }

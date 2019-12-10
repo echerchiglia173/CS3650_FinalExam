@@ -19,10 +19,10 @@ int main (int argc, char** argv){
 
 int countLines(ifstream ins){
   int count=0;
-  ins>>getline();
+  ins.getline();
   count++;
   while(!ins.eof()){
-    ins>>getline();
+    ins.getline();
     count++;
   }
   return count;

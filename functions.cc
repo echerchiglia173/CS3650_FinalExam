@@ -5,8 +5,8 @@
 #include<string>
 using namespace std;
 
-int countLines(ifstream ins);
-int countWord(ifstream ins);
+int countLines(ifstream& ins);
+int countWord(ifstream& ins);
 // the
 int main (int argc, char** argv){
   ifstream ins;

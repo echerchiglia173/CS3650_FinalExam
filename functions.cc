@@ -17,7 +17,7 @@ int main (int argc, char** argv){
     return 0;
 }
 
-int countLines(ifstream ins){
+int countLines(istream& ins){
   int count=0;
   ins.getline();
   count++;
@@ -28,7 +28,7 @@ int countLines(ifstream ins){
   return count;
 }
 
-int countWord(ifstream ins){
+int countWord(istream& ins){
   int count=0;
   char x;
   ins>>x;

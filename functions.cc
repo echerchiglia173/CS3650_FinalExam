@@ -1,5 +1,5 @@
 #include <iostream>
-#include <ifstream>
+#include <istream>
 using namespace std;
 
 int countLines(ifstream ins);

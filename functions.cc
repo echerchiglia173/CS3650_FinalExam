@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 #include <iostream>
-#include <ifstream>
+#include <fstream>
 using namespace std;
 
 int countLines(ifstream ins);

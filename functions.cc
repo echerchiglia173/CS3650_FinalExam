@@ -13,7 +13,7 @@ int main (int argc, char** argv){
   ifstream ins;
   cout << "You have entered " << argc << " arguments:" << "\n";
 
-    for (int i = 0; i < argc; ++i){}
+    for (int i = 0; i < argc; ++i){
         cout << argv[i] << "\n";
       }
         ins.open();

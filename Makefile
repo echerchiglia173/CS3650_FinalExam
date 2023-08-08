@@ -9,6 +9,6 @@ CC = g++
 functions: functions.cc
 		$(CC) $(CFLAGS) functions.o -o count\
 
-# remove all the object and executable files
+# remove all the object and executable files from within 
 clean:
 	rm -f functions.o main
